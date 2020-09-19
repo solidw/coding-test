@@ -5,7 +5,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
 ### Index
 ```
 │  README.md
-│  
+│
 ├─.vscode
 │      settings.json
 │
@@ -19,9 +19,9 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
 │
 └─programmers
     ├─Hash
+    │      an-uncompleted-player.js
     │      best-album.js
-    │      disguise.js
-    │      marathon.js
+    │      camouflage.js
     │
     ├─Heap
     │      disk-controller.js
