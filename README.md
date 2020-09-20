@@ -29,6 +29,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │
     ├─Sort
     │      biggest-number.js
+    │      H-index.js
     │      K-th-number.js
     │
     └─Stack-Queue
