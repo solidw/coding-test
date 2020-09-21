@@ -18,6 +18,9 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
 │      9020.js
 │
 └─programmers
+    ├─ExhaustiveSearch
+    │      mock-test.js
+    │
     ├─Hash
     │      an-uncompleted-player.js
     │      best-album.js
