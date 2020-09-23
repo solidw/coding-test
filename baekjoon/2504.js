@@ -11,8 +11,6 @@ function solution(line) {
 
 	const stack = [];
 	let point = 0;
-	let openBigPoint = -1;
-	let openSmallPoint = -1;
 	line.forEach((char, index) => {
 		if (char === "(" || char === "[") {
 			point += 1;
