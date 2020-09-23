@@ -20,6 +20,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
 └─programmers
     ├─ExhaustiveSearch
     │      mock-test.js
+    │      prime-number.js
     │
     ├─Hash
     │      an-uncompleted-player.js
