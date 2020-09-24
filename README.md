@@ -19,6 +19,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
 │
 └─programmers
     ├─ExhaustiveSearch
+    │      carpet.js
     │      mock-test.js
     │      prime-number.js
     │
