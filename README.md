@@ -24,6 +24,8 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │      prime-number.js
     │
     ├─Greedy
+    │      make-big-number(time-over).js
+    │      make-big-number.js
     │      traning-clothes.js
     │
     ├─Hash
