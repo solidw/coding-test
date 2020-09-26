@@ -23,6 +23,9 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │      mock-test.js
     │      prime-number.js
     │
+    ├─Greedy
+    │      traning-clothes.js
+    │
     ├─Hash
     │      an-uncompleted-player.js
     │      best-album.js
