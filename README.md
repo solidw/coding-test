@@ -29,6 +29,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │      lifeboat.js
     │      make-big-number(time-over).js
     │      make-big-number.js
+    │      speed-trap.js
     │      traning-clothes.js
     │
     ├─Hash
