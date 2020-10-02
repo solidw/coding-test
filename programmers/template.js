@@ -3,7 +3,7 @@ function solution(N, number) {
 	return answer;
 }
 
-const testCase = process.argv.length > 2 ? Number(process.argv[2]) : -1;
+const testCase = process.argv.length > 2 ? Number(process.argv[2]) : 1;
 
 let N = -1;
 let number = -1;
