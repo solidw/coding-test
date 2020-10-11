@@ -26,6 +26,9 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │      target-number.js
     │      travel-path.js
     │
+    ├─BinarySearch
+    │      immigration.js
+    │
     ├─DynamicProgramming
     │      express-N.js
     │      integer-triangle.js
