@@ -39,6 +39,9 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │      mock-test.js
     │      prime-number.js
     │
+    ├─Graph
+    │      farthest-node.js
+    │
     ├─Greedy
     │      connect-island.js
     │      joystick.js
