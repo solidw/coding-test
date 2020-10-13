@@ -41,6 +41,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
     │
     ├─Graph
     │      farthest-node.js
+    │      ranking.js
     │
     ├─Greedy
     │      connect-island.js
