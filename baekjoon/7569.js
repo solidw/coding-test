@@ -9,19 +9,19 @@ function scanf() {
 	rl.on("line", function (line) {
 		input.push(line);
 	}).on("close", function () {
-		solution(input);
-		console.log("break");
+		const answer = solution(input);
+		console.log(answer);
 		process.exit();
 	});
 }
 
 const moves = [
-	[1, 0, 0], // 상
-	[-1, 0, 0], // 하
-	[0, 0, 1], // 동
-	[0, 0, -1], // 서
-	[0, 1, 0], // 남
-	[0, -1, 0], // 북
+	[1, 0, 0],
+	[-1, 0, 0],
+	[0, 0, 1],
+	[0, 0, -1],
+	[0, 1, 0],
+	[0, -1, 0],
 ];
 
 function checkValidIndex(index, maxLength) {
@@ -50,17 +50,22 @@ function solution(input) {
 				.map(() => Array(M).fill(-1))
 		);
 
-	const startPoints = [];
+	const queue = [];
+
 	let isDone = true;
 	for (let h = 0; h < H; h++) {
 		for (let n = 0; n < N; n++) {
 			const line = input.shift().split(" ");
 			for (let m = 0; m < M; m++) {
 				if (line[m] === "1") {
-					startPoints.push([h, n, m]);
+					queue.push([h, n, m]);
+					visited[h][n][m] = 0;
 				}
 				if (line[m] === "0") {
 					isDone = false;
+				}
+				if (line[m] === "-1") {
+					visited[h][n][m] = 0;
 				}
 				tomatos[h][n][m] = line[m];
 			}
@@ -72,25 +77,18 @@ function solution(input) {
 	}
 
 	// Logic
-	const queue = [];
-	startPoints.forEach((point) => {
-		const [h, n, m] = point;
-		queue.push(point);
-		visited[h][n][m] = 0;
-	});
-
 	while (queue.length !== 0) {
-		console.log(queue);
 		const [h, n, m] = queue.shift();
+
 		moves.forEach((move) => {
 			const [mh, mn, mm] = move;
 			const calcH = h + mh;
 			const calcN = n + mn;
 			const calcM = m + mm;
 			if (
-				checkValidIndex(calcH, tomatos.length) &&
-				checkValidIndex(calcN, tomatos[0].length) &&
-				checkValidIndex(calcM, tomatos[0][0].length)
+				checkValidIndex(calcH, H) &&
+				checkValidIndex(calcN, N) &&
+				checkValidIndex(calcM, M)
 			) {
 				if (tomatos[calcH][calcN][calcM] === "0") {
 					if (visited[calcH][calcN][calcM] === -1) {
@@ -103,7 +101,6 @@ function solution(input) {
 	}
 
 	const flatVisited = visited.map((v) => v.flat()).flat();
-	console.log(flatVisited);
 	const isFailed = flatVisited.some((f) => f === -1);
 	if (isFailed) {
 		return -1;
@@ -113,7 +110,7 @@ function solution(input) {
 	return day;
 }
 
-// scanf();
+scanf();
 
 const example1 = `5 3 1
 0 -1 0 0 0
@@ -136,5 +133,5 @@ const example3 = `4 3 2
 -1 -1 -1 -1
 1 1 1 -1`.split("\n");
 
-const answer = solution(example1);
-console.log(answer);
+// const answer = solution(example1);
+// console.log(answer);
