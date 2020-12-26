@@ -5,8 +5,6 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-const regexForNumber = /[0-9]/g;
-
 const move = [
   [1, 0],
   [-1, 0],
