@@ -59,7 +59,6 @@ rl.on('line', function (line) {
   input.push(line);
 }).on('close', function () {
   const answer = solution(input);
-  console.log('-'.repeat(30));
   console.log(answer);
   process.exit();
 });
