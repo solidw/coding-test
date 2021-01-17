@@ -12,6 +12,7 @@ let input = [];
 rl.on('line', function (line) {
   input.push(line);
 }).on('close', function () {
-  solution(input);
+  const answer = solution(input);
+  console.log(answer);
   process.exit();
 });
