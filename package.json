@@ -1,0 +1,11 @@
+{
+  "name": "coding-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/solidw/coding-test.git",
+  "author": "solidw <solidw@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tree-node-cli": "^1.4.0"
+  }
+}
