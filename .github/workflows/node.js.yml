@@ -6,8 +6,6 @@ name: Node.js CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
@@ -25,7 +23,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: node updateREADME.js
-    - run: git add updateREADME.js
-    - run: git commit -m "docs: Update README.md"
-   -  run: git push
+    - run: |
+          node updateREADME.js
+          git config --global user.name 'solidw'
+          git config --global user.email 'solidw@naver.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git add .
+          git commit -am "docs: Update README.md"
+          git push
+
