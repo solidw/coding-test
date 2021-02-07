@@ -11,12 +11,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Use Node.js 14
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v1   
       with:
         node-version: '14'
     - run: |
+          npm install
           node ./updateREADME.js
           git config --global user.name 'solidw'
           git config --global user.email 'solidw@naver.com'
