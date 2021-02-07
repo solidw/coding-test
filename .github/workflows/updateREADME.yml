@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '14'
     - run: |
-          npm install
+          npm ci
           node ./updateREADME.js
           git config --global user.name 'solidw'
           git config --global user.email 'solidw@naver.com'
