@@ -11,10 +11,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Use Node.js 14
-      uses: actions/setup-node@v1   
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
       with:
-        node-version: '14'
+        node-version: ${{ matrix.node-version }}
+        registry-url: "https://npm.pkg.github.com"
+
     - run: |
           npm install
           node ./updateREADME.js
