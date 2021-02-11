@@ -6,6 +6,8 @@ name: Update README CI
 on:
   push:
     branches: [ master ]
+    paths:
+      - "**.js"
 
 jobs:
   build:
