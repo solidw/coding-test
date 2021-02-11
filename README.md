@@ -4,6 +4,7 @@ Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.
 ### Folder Structure
 ```
 coding-test
+├── README.md
 ├── baekjoon
 │   ├── 1003.js
 │   ├── 11057.js
@@ -17,7 +18,6 @@ coding-test
 │   ├── 2504.js
 │   ├── 4889.js
 │   ├── 9020.js
-│   ├── 9466_unsolved.js
 │   ├── baekjoonTemplate.js
 │   └── workbook
 │       ├── bfs
@@ -29,12 +29,8 @@ coding-test
 │       │   ├── 4179.js
 │       │   ├── 6593.js
 │       │   ├── 7569.js
-│       │   ├── 7576.js
-│       │   └── 9466.js
-│       ├── simulation
-│       │   └── 15683.js
+│       │   └── 7576.js
 │       ├── sort1
-│       │   ├── 10989_unsolved.js
 │       │   ├── 11650.js
 │       │   ├── 11651.js
 │       │   ├── 11931.js
@@ -49,8 +45,8 @@ coding-test
 │           ├── 1181.js
 │           ├── 1431.js
 │           ├── 2910.js
-│           ├── 5648_unsolved.js
 │           └── 7795.js
+├── package-lock.json
 ├── package.json
 ├── programmers
 │   ├── BFS-DFS
@@ -70,7 +66,6 @@ coding-test
 │   │   └── prime-number.js
 │   ├── Graph
 │   │   ├── farthest-node.js
-│   │   ├── numberOfRoom.js
 │   │   └── ranking.js
 │   ├── Greedy
 │   │   ├── connect-island.js
@@ -88,15 +83,14 @@ coding-test
 │   │   ├── disk-controller.js
 │   │   └── double-priority-queue.js
 │   ├── Sort
-│   │   ├── biggest-number.js
 │   │   ├── H-index.js
-│   │   └── K-th-number.js
+│   │   ├── K-th-number.js
+│   │   └── biggest-number.js
 │   ├── Stack-Queue
 │   │   ├── develop-function.js
 │   │   ├── printer.js
 │   │   └── truck-passing-the-bridge.js
 │   └── template.js
-├── README.md
 ├── updateREADME.js
 └── yarn.lock
 ```

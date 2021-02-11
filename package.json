@@ -2,10 +2,22 @@
   "name": "coding-test",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/solidw/coding-test.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solidw/coding-test.git"
+  },
   "author": "solidw <solidw@naver.com>",
   "license": "MIT",
   "devDependencies": {
     "tree-node-cli": "^1.4.0"
-  }
+  },
+  "description": "Upload how to solve algorithms at Programmers, Baekjoon, ... using JavaScript.",
+  "bugs": {
+    "url": "https://github.com/solidw/coding-test/issues"
+  },
+  "homepage": "https://github.com/solidw/coding-test#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
 }
