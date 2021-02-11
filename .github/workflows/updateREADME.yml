@@ -24,7 +24,7 @@ jobs:
           git config --global user.name 'solidw'
           git config --global user.email 'solidw@naver.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git add .
-          git commit -am "docs: Update README.md"
+          git add ./README.md
+          git commit -am "docs: Update README.md by github actions"
           git push
 
