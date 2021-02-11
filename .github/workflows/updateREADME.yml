@@ -18,7 +18,7 @@ jobs:
         registry-url: "https://npm.pkg.github.com"
 
     - run: |
-          npm install
+          npm init -y && npm install
           node ./updateREADME.js
           git config --global user.name 'solidw'
           git config --global user.email 'solidw@naver.com'
