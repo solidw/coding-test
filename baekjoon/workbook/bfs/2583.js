@@ -76,7 +76,6 @@ function solution(input) {
     .join(' ');
 
   console.log(answer);
-  return answer;
 }
 
 let input = [];
@@ -84,6 +83,6 @@ let input = [];
 rl.on('line', function (line) {
   input.push(line);
 }).on('close', function () {
-  const answer = solution(input);
+  solution(input);
   process.exit();
 });
