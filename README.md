@@ -21,6 +21,7 @@ coding-test
 │   ├── baekjoonTemplate.js
 │   └── workbook
 │       ├── bfs
+│       │   ├── 10026.js
 │       │   ├── 1012.js
 │       │   ├── 1679.js
 │       │   ├── 1926.js
